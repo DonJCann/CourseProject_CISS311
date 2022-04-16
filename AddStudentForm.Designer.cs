@@ -30,10 +30,10 @@ namespace CourseProject_CISS_311
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.studentNameTextBox = new System.Windows.Forms.TextBox();
             this.studentIdTextBox = new System.Windows.Forms.TextBox();
+            this.studentNameTextBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.addStudentButton = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -55,15 +55,19 @@ namespace CourseProject_CISS_311
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Enter Student Data";
             // 
-            // label1
+            // studentIdTextBox
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(98, 43);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(196, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "New Student Name ";
+            this.studentIdTextBox.Location = new System.Drawing.Point(401, 144);
+            this.studentIdTextBox.Name = "studentIdTextBox";
+            this.studentIdTextBox.Size = new System.Drawing.Size(134, 20);
+            this.studentIdTextBox.TabIndex = 3;
+            // 
+            // studentNameTextBox
+            // 
+            this.studentNameTextBox.Location = new System.Drawing.Point(401, 43);
+            this.studentNameTextBox.Name = "studentNameTextBox";
+            this.studentNameTextBox.Size = new System.Drawing.Size(134, 20);
+            this.studentNameTextBox.TabIndex = 2;
             // 
             // label2
             // 
@@ -75,19 +79,15 @@ namespace CourseProject_CISS_311
             this.label2.TabIndex = 1;
             this.label2.Text = "Student ID";
             // 
-            // studentNameTextBox
+            // label1
             // 
-            this.studentNameTextBox.Location = new System.Drawing.Point(401, 43);
-            this.studentNameTextBox.Name = "studentNameTextBox";
-            this.studentNameTextBox.Size = new System.Drawing.Size(134, 20);
-            this.studentNameTextBox.TabIndex = 2;
-            // 
-            // studentIdTextBox
-            // 
-            this.studentIdTextBox.Location = new System.Drawing.Point(401, 144);
-            this.studentIdTextBox.Name = "studentIdTextBox";
-            this.studentIdTextBox.Size = new System.Drawing.Size(134, 20);
-            this.studentIdTextBox.TabIndex = 3;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(98, 43);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(196, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "New Student Name ";
             // 
             // addStudentButton
             // 
@@ -136,6 +136,7 @@ namespace CourseProject_CISS_311
             this.Controls.Add(this.groupBox1);
             this.Name = "AddStudentForm";
             this.Text = "AddStudentForm";
+            this.Load += new System.EventHandler(this.AddStudentForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);

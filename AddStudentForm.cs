@@ -16,5 +16,10 @@ namespace CourseProject_CISS_311
         {
             InitializeComponent();
         }
+
+        private void AddStudentForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
