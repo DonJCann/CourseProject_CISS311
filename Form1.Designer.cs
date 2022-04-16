@@ -59,6 +59,7 @@ namespace CourseProject_CISS_311
             this.addStudentButton.TabIndex = 1;
             this.addStudentButton.Text = "Add A Student";
             this.addStudentButton.UseVisualStyleBackColor = true;
+            this.addStudentButton.Click += new System.EventHandler(this.addStudentButton_Click);
             // 
             // addCourseButton
             // 

@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Configuration;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,14 +14,38 @@ namespace CourseProject_CISS_311
 {
     public partial class AddStudentForm : Form
     {
+        //following lines declare sql variable
+        string connectionString;
+        SqlConnection conn;
         public AddStudentForm()
         {
             InitializeComponent();
+            //following line establishes connection to course project database
+            connectionString = ConfigurationManager.ConnectionStrings["CourseProject_CISS_311.Properties.Settings.CourseProjectDBConnectionString"].ConnectionString;
         }
 
         private void AddStudentForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            //following line closes the add student form
+            Close();
+        }
+
+        private void addStudentButton_Click(object sender, EventArgs e)
+        {
+            //following lines establish a connection to the database to insert values from the add student form
+            using (conn = new SqlConnection(connectionString))
+                using(SqlCommand comd = new SqlCommand ("INSERT INTO student (studentName, studentId)"+"VALUES (@studentName, @studentId)", conn))
+            {
+                conn.Open();
+                comd.Parameters.AddWithValue("@studentName", studentNameTextBox.Text);
+                comd.Parameters.AddWithValue("@studnetId", studentIdTextBox.Text);
+                MessageBox.Show("Student Added.");
+            }
         }
     }
 }
