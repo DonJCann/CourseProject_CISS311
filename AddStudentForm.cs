@@ -44,7 +44,9 @@ namespace CourseProject_CISS_311
                 conn.Open();
                 comd.Parameters.AddWithValue("@studentName", studentNameTextBox.Text);
                 comd.Parameters.AddWithValue("@studnetId", studentIdTextBox.Text);
+                //following lines confirm a student has been successfully added to database by displaying messages in a message box and on the status strip
                 MessageBox.Show("Student Added.");
+                feedbackToolStripStatusLabel.Text = "The student has been added to the database!";
             }
         }
     }
