@@ -35,6 +35,7 @@ namespace CourseProject_CISS_311
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            /*
             using (conn = new SqlConnection(connectionString))//setsup connection
             using (SqlDataAdapter adapter = new SqlDataAdapter
                 ("SELECT * FROM student", conn))//passes conn to SqlDataAdapter
@@ -47,12 +48,12 @@ namespace CourseProject_CISS_311
                 studentListBox.DataSource = studentTable;//sets table to Datasource
 
             }
-
+            */
         }
 
         private void DisplayStudentForm_Load(object sender, EventArgs e)
         {
-            /*
+
             using (conn = new SqlConnection(connectionString))//setsup connection
             using (SqlDataAdapter adapter = new SqlDataAdapter
                 ("SELECT * FROM student", conn))//passes conn to SqlDataAdapter
@@ -63,8 +64,8 @@ namespace CourseProject_CISS_311
                 studentListBox.DisplayMember = "studentName";//adds studentName to DisplayMember
                 studentListBox.ValueMember = "studentId";//adds studentId to Value member
                 studentListBox.DataSource = studentTable;//sets table to Datasource
-            */
 
+            }
         }
     }
 }

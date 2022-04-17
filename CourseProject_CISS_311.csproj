@@ -84,6 +84,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CourseProjectDBDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="CourseProjectDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CourseProjectDBDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DisplayStudentForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +142,17 @@
     </None>
     <None Include="CourseProjectDBDataSet1.xss">
       <DependentUpon>CourseProjectDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CourseProjectDBDataSet2.xsc">
+      <DependentUpon>CourseProjectDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CourseProjectDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CourseProjectDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CourseProjectDBDataSet2.xss">
+      <DependentUpon>CourseProjectDBDataSet2.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
