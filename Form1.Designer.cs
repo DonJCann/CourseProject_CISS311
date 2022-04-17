@@ -80,6 +80,7 @@ namespace CourseProject_CISS_311
             this.displayStudentButton.TabIndex = 3;
             this.displayStudentButton.Text = "Display All Students";
             this.displayStudentButton.UseVisualStyleBackColor = true;
+            this.displayStudentButton.Click += new System.EventHandler(this.displayStudentButton_Click);
             // 
             // displayCoursesButton
             // 
