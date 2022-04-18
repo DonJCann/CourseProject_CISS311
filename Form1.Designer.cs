@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace CourseProject_CISS_311
 {
     partial class welcomeForm
@@ -176,6 +178,7 @@ namespace CourseProject_CISS_311
         private System.Windows.Forms.Button whoIsInACourseButton;
         private System.Windows.Forms.Button whatCoursesIsAStudentInButton;
         private System.Windows.Forms.Button exitButton;
+        private EventHandler welcomeForm_Load;
     }
 }
 
