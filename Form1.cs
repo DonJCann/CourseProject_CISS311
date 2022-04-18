@@ -42,9 +42,11 @@ namespace CourseProject_CISS_311
             displayStudentForm.ShowDialog();
         }
 
-        private void welcomeForm_Load(object sender, EventArgs e)
+        private void addCourseButton_Click(object sender, EventArgs e)
         {
-
+            // Opens the add course form when the add course button is clicked 
+            AddCourseForm addCourseForm = new AddCourseForm();
+            addCourseForm.ShowDialog();
         }
     }
 }
