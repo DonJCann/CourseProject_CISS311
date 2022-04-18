@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace CourseProject_CISS_311
 {
     partial class welcomeForm
@@ -163,6 +165,11 @@ namespace CourseProject_CISS_311
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void welcomeForm_Load(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
