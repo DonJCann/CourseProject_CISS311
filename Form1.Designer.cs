@@ -161,7 +161,7 @@ namespace CourseProject_CISS_311
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "welcomeForm";
             this.Text = "Welcome";
-            this.Load += new System.EventHandler(this.welcomeForm_Load);
+
             this.ResumeLayout(false);
             this.PerformLayout();
 
