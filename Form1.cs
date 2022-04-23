@@ -48,5 +48,11 @@ namespace CourseProject_CISS_311
             AddCourseForm addCourseForm = new AddCourseForm();
             addCourseForm.ShowDialog();
         }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            //following line closes main form
+            Close();
+        }
     }
 }
