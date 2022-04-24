@@ -62,8 +62,10 @@ namespace CourseProject_CISS_311
 
                     DataRow dr = coursesTable.Rows[0];//creates dr and assigns coursestable
                     courseId = int.Parse(dr["courseId"].ToString());//used to update courseId from update button
-                    courseTitleTextBox.Text = dr["courseName"].ToString();//finds courseId from dr and assigns to currentTitleTextBox
-                    studentListBox.Text = dr["studentName"].ToString();
+                    courseTitleTextBox.Text = dr["courseName"].ToString();//finds courseName from dr and assigns to currentTitleTextBox
+                    //studentListBox.Text = dr["studentName"].ToString();
+                    studentListBox.DisplayMember = "studentName";
+                    studentListBox.DataSource = coursesTable;
 
 
                 }

@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.courseTitleTextBox = new System.Windows.Forms.TextBox();
+            this.courseIdTextBox = new System.Windows.Forms.TextBox();
+            this.findButton = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.studentListBox = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.closeButton = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.findButton = new System.Windows.Forms.Button();
-            this.courseIdTextBox = new System.Windows.Forms.TextBox();
-            this.courseTitleTextBox = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,6 +55,42 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Who Is In A Course";
+            // 
+            // courseTitleTextBox
+            // 
+            this.courseTitleTextBox.Enabled = false;
+            this.courseTitleTextBox.Location = new System.Drawing.Point(157, 77);
+            this.courseTitleTextBox.Name = "courseTitleTextBox";
+            this.courseTitleTextBox.Size = new System.Drawing.Size(159, 20);
+            this.courseTitleTextBox.TabIndex = 7;
+            // 
+            // courseIdTextBox
+            // 
+            this.courseIdTextBox.Location = new System.Drawing.Point(157, 35);
+            this.courseIdTextBox.Name = "courseIdTextBox";
+            this.courseIdTextBox.Size = new System.Drawing.Size(159, 20);
+            this.courseIdTextBox.TabIndex = 6;
+            // 
+            // findButton
+            // 
+            this.findButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.findButton.Location = new System.Drawing.Point(343, 35);
+            this.findButton.Name = "findButton";
+            this.findButton.Size = new System.Drawing.Size(111, 47);
+            this.findButton.TabIndex = 5;
+            this.findButton.Text = "&Find";
+            this.findButton.UseVisualStyleBackColor = true;
+            this.findButton.Click += new System.EventHandler(this.findButton_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(40, 78);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(97, 20);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Course Title:";
             // 
             // studentListBox
             // 
@@ -95,41 +131,6 @@
             this.closeButton.Text = "&Close";
             this.closeButton.UseVisualStyleBackColor = true;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(40, 78);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 20);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Course Title:";
-            // 
-            // findButton
-            // 
-            this.findButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.findButton.Location = new System.Drawing.Point(343, 35);
-            this.findButton.Name = "findButton";
-            this.findButton.Size = new System.Drawing.Size(111, 47);
-            this.findButton.TabIndex = 5;
-            this.findButton.Text = "&Find";
-            this.findButton.UseVisualStyleBackColor = true;
-            this.findButton.Click += new System.EventHandler(this.findButton_Click);
-            // 
-            // courseIdTextBox
-            // 
-            this.courseIdTextBox.Location = new System.Drawing.Point(157, 35);
-            this.courseIdTextBox.Name = "courseIdTextBox";
-            this.courseIdTextBox.Size = new System.Drawing.Size(159, 20);
-            this.courseIdTextBox.TabIndex = 6;
-            // 
-            // courseTitleTextBox
-            // 
-            this.courseTitleTextBox.Location = new System.Drawing.Point(157, 77);
-            this.courseTitleTextBox.Name = "courseTitleTextBox";
-            this.courseTitleTextBox.Size = new System.Drawing.Size(159, 20);
-            this.courseTitleTextBox.TabIndex = 7;
             // 
             // WhoIsInACourseForm
             // 
