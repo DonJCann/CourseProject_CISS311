@@ -28,59 +28,123 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.studentListBox = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.closeButton = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
+            this.allStudentDataGridView = new System.Windows.Forms.DataGridView();
+            this.courseProjectDBDataSet1 = new CourseProject_CISS_311.CourseProjectDBDataSet();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.studentTableAdapter1 = new CourseProject_CISS_311.CourseProjectDBDataSetTableAdapters.studentTableAdapter();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            ((System.ComponentModel.ISupportInitialize)(this.allStudentDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.courseProjectDBDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // studentListBox
+            // allStudentDataGridView
             // 
-            this.studentListBox.FormattingEnabled = true;
-            this.studentListBox.Location = new System.Drawing.Point(84, 106);
-            this.studentListBox.Name = "studentListBox";
-            this.studentListBox.Size = new System.Drawing.Size(600, 225);
-            this.studentListBox.TabIndex = 0;
-            this.studentListBox.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.allStudentDataGridView.AutoGenerateColumns = false;
+            this.allStudentDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.allStudentDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3});
+            this.allStudentDataGridView.DataSource = this.bindingSource1;
+            this.allStudentDataGridView.Location = new System.Drawing.Point(21, 37);
+            this.allStudentDataGridView.Name = "allStudentDataGridView";
+            this.allStudentDataGridView.Size = new System.Drawing.Size(344, 317);
+            this.allStudentDataGridView.TabIndex = 0;
             // 
-            // label1
+            // courseProjectDBDataSet1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(81, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "All students";
+            this.courseProjectDBDataSet1.DataSetName = "CourseProjectDBDataSet";
+            this.courseProjectDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // closeButton
+            // bindingSource1
             // 
-            this.closeButton.Location = new System.Drawing.Point(439, 361);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(222, 62);
-            this.closeButton.TabIndex = 2;
-            this.closeButton.Text = "&Close";
-            this.closeButton.UseVisualStyleBackColor = true;
-            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            this.bindingSource1.DataMember = "student";
+            this.bindingSource1.DataSource = this.courseProjectDBDataSet1;
+            // 
+            // studentTableAdapter1
+            // 
+            this.studentTableAdapter1.ClearBeforeFill = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "studentId";
+            this.dataGridViewTextBoxColumn1.HeaderText = "studentId";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "studentName";
+            this.dataGridViewTextBoxColumn2.HeaderText = "studentName";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "coursesEnrolled";
+            this.dataGridViewTextBoxColumn3.HeaderText = "coursesEnrolled";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // button
+            // 
+            this.button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button.Location = new System.Drawing.Point(128, 409);
+            this.button.Name = "button";
+            this.button.Size = new System.Drawing.Size(166, 46);
+            this.button.TabIndex = 1;
+            this.button.Text = "&Close";
+            this.button.UseVisualStyleBackColor = true;
+            this.button.Click += new System.EventHandler(this.button_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.allStudentDataGridView);
+            this.groupBox1.Location = new System.Drawing.Point(13, 13);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(389, 390);
+            this.groupBox1.TabIndex = 2;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Display All Students";
             // 
             // DisplayStudentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.closeButton);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.studentListBox);
+            this.ClientSize = new System.Drawing.Size(418, 467);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.button);
             this.Name = "DisplayStudentForm";
-            this.Text = "displayStudentForm";
-            this.Load += new System.EventHandler(this.DisplayStudentForm_Load);
+            this.Text = "DisplayAllStudentsForm";
+            this.Load += new System.EventHandler(this.DisplayStudentForm_Load_1);
+            ((System.ComponentModel.ISupportInitialize)(this.allStudentDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.courseProjectDBDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox studentListBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button closeButton;
+        private System.Windows.Forms.DataGridView allStudentsDataGridView;
+        private CourseProjectDBDataSet courseProjectDBDataSet;
+        private System.Windows.Forms.BindingSource studentBindingSource;
+        private CourseProjectDBDataSetTableAdapters.studentTableAdapter studentTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn studentIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn studentNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn coursesEnrolledDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridView allStudentDataGridView;
+        private CourseProjectDBDataSet courseProjectDBDataSet1;
+        private System.Windows.Forms.BindingSource bindingSource1;
+        private CourseProjectDBDataSetTableAdapters.studentTableAdapter studentTableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.Button button;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
