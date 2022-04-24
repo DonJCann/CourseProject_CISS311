@@ -81,6 +81,7 @@
             this.selectAStudentComboBox.Name = "selectAStudentComboBox";
             this.selectAStudentComboBox.Size = new System.Drawing.Size(270, 33);
             this.selectAStudentComboBox.TabIndex = 2;
+            this.selectAStudentComboBox.SelectedIndexChanged += new System.EventHandler(this.selectAStudentComboBox_SelectedIndexChanged);
             // 
             // selectACourseComboBox
             // 
@@ -109,6 +110,7 @@
             this.closeButton.TabIndex = 5;
             this.closeButton.Text = "Close";
             this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // EnrollAStudentForm
             // 
@@ -118,6 +120,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "EnrollAStudentForm";
             this.Text = "Enroll A Student A Course";
+            this.Load += new System.EventHandler(this.EnrollAStudentForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
