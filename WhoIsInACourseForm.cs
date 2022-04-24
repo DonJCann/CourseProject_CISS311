@@ -33,7 +33,16 @@ namespace CourseProject_CISS_311
 
         private void courseComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            using (conn = new SqlConnection(connectionString))
+            using (SqlCommand comd = new SqlCommand("SELECT studentName FROM student  WHERE student.coursesEnrolled =" + courseComboBox.SelectedValue, conn))
+            using (SqlDataAdapter adapter = new SqlDataAdapter(comd))//passes comd to SqlDataAdapter
+            {
+                DataTable studentTable = new DataTable();//setsup connection
+                adapter.Fill(studentTable);
+                studentListBox.DisplayMember = "studentName";
+                //studentListBox.ValueMember = "studentId";
+                studentListBox.DataSource = studentTable;
+            }
         }
 
         private void WhoIsInACourseForm_Load(object sender, EventArgs e)
@@ -51,15 +60,7 @@ namespace CourseProject_CISS_311
 
         private void studentListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            using (conn = new SqlConnection(connectionString))
-            using (SqlDataAdapter adapter = new SqlDataAdapter("SELECT  * FROM student JOIN courses ON student.studentId = courses.studentId", conn))
-            {
-                DataTable courseTable = new DataTable();
-                adapter.Fill(courseTable);
-                studentListBox.DisplayMember = "studentName";
-                studentListBox.ValueMember = "studentId";
-                studentListBox.DataSource = courseTable;
-            }
+
         }
     }
 }
