@@ -71,9 +71,16 @@ namespace CourseProject_CISS_311
 
         private void whoIsInACourseButton_Click(object sender, EventArgs e)
         {
-            //following lines open what students are enrolled in a course form
+            //following lines open who is enrolled in what course form
             WhoIsInACourseForm WhoIsInACourseForm = new WhoIsInACourseForm();
             WhoIsInACourseForm.ShowDialog();
+        }
+
+        private void enrollStudentButton_Click(object sender, EventArgs e)
+        {
+            //following lines open what students are enrolled in a course form
+            EnrollAStudentForm EnrollAStudentForm = new EnrollAStudentForm();
+            EnrollAStudentForm.ShowDialog();
         }
     }
 }

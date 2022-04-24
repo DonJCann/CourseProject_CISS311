@@ -105,6 +105,7 @@ namespace CourseProject_CISS_311
             this.enrollStudentButton.TabIndex = 5;
             this.enrollStudentButton.Text = "Enroll A Student In A Course";
             this.enrollStudentButton.UseVisualStyleBackColor = true;
+            this.enrollStudentButton.Click += new System.EventHandler(this.enrollStudentButton_Click);
             // 
             // whoIsInACourseButton
             // 
