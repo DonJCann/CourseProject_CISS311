@@ -18,6 +18,7 @@ namespace CourseProject_CISS_311
         //establishes SQL connection
         string connectionString;
         SqlConnection conn;
+        int courseId;
 
         public WhoIsInACourseForm()
         {
@@ -31,36 +32,42 @@ namespace CourseProject_CISS_311
             Close();//closes form
         }
 
-        private void courseComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            using (conn = new SqlConnection(connectionString))
-            using (SqlCommand comd = new SqlCommand("SELECT studentName FROM student  WHERE student.coursesEnrolled =" + courseComboBox.SelectedValue, conn))
-            using (SqlDataAdapter adapter = new SqlDataAdapter(comd))//passes comd to SqlDataAdapter
-            {
-                DataTable studentTable = new DataTable();//setsup connection
-                adapter.Fill(studentTable);
-                studentListBox.DisplayMember = "studentName";
-                //studentListBox.ValueMember = "studentId";
-                studentListBox.DataSource = studentTable;
-            }
-        }
+
 
         private void WhoIsInACourseForm_Load(object sender, EventArgs e)
         {
-            using (conn = new SqlConnection(connectionString))
-            using (SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM courses", conn))
-            {
-                DataTable courseTable = new DataTable();
-                adapter.Fill(courseTable);
-                courseComboBox.DisplayMember = "courseName";
-                courseComboBox.ValueMember = "courseId";
-                courseComboBox.DataSource = courseTable;
-            }
+
         }
 
         private void studentListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void findButton_Click(object sender, EventArgs e)
+        {
+            using (conn = new SqlConnection(connectionString))
+            using (SqlCommand comd = new SqlCommand(//SQL commands to SELECT based off courseId that matches
+                "SELECT courses.courseId, courses.courseName, student.studentName FROM courses JOIN student ON courses.courseName = student.coursesEnrolled WHERE courseId = @courseId", conn))
+
+            using (SqlDataAdapter adapter = new SqlDataAdapter(comd))
+            {
+                comd.Parameters.AddWithValue("@courseId", courseIdTextBox.Text);
+                DataTable coursesTable = new DataTable();
+                adapter.Fill(coursesTable);//fills course table from db
+                if (coursesTable.Rows.Count < 1)//if statement for no record
+                    courseTitleTextBox.Text = "No students found in course";
+                else //else for the record found
+                {
+
+                    DataRow dr = coursesTable.Rows[0];//creates dr and assigns coursestable
+                    courseId = int.Parse(dr["courseId"].ToString());//used to update courseId from update button
+                    courseTitleTextBox.Text = dr["courseName"].ToString();//finds courseId from dr and assigns to currentTitleTextBox
+                    studentListBox.Text = dr["studentName"].ToString();
+
+
+                }
+            }
         }
     }
 }
