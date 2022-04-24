@@ -125,6 +125,7 @@ namespace CourseProject_CISS_311
             this.whatCoursesIsAStudentInButton.TabIndex = 7;
             this.whatCoursesIsAStudentInButton.Text = "What Courses A Student Enrolled In";
             this.whatCoursesIsAStudentInButton.UseVisualStyleBackColor = true;
+            this.whatCoursesIsAStudentInButton.Click += new System.EventHandler(this.whatCoursesIsAStudentInButton_Click);
             // 
             // exitButton
             // 

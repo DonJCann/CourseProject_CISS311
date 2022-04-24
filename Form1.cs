@@ -61,5 +61,12 @@ namespace CourseProject_CISS_311
             DisplayAllCoursesFrom displayAllCoursesForm = new DisplayAllCoursesFrom();
             displayAllCoursesForm.ShowDialog();
         }
+
+        private void whatCoursesIsAStudentInButton_Click(object sender, EventArgs e)
+        {
+            //following lines open what courses a student is enrolled in form
+            whatCoursesStudentEnrolledForm whatCoursesStudentEnrolledForm = new whatCoursesStudentEnrolledForm();
+            whatCoursesStudentEnrolledForm.ShowDialog();
+        }
     }
 }
