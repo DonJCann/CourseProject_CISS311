@@ -32,7 +32,7 @@ namespace CourseProject_CISS_311
         private void whatCoursesStudentEnrolledForm_Load(object sender, EventArgs e)
         {
             using (conn = new SqlConnection(connectionString))
-            using (SqlDataAdapter adapter = new SqlDataAdapter ("SELECT * FROM student", conn))
+            using (SqlDataAdapter adapter = new SqlDataAdapter ("SELECT student.studentName, student.studentId, courses.studentId FROM student JOIN courses ON student.studentId = courses.studentId", conn))
             {
                 DataTable studentTable = new DataTable();
                 adapter.Fill(studentTable);
