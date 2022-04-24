@@ -54,5 +54,12 @@ namespace CourseProject_CISS_311
             //following line closes main form
             Close();
         }
+
+        private void displayCoursesButton_Click(object sender, EventArgs e)
+        {
+            //following lines open display all courses form
+            DisplayAllCoursesFrom displayAllCoursesForm = new DisplayAllCoursesFrom();
+            displayAllCoursesForm.ShowDialog();
+        }
     }
 }

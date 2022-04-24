@@ -94,6 +94,7 @@ namespace CourseProject_CISS_311
             this.displayCoursesButton.TabIndex = 4;
             this.displayCoursesButton.Text = "Display All Courses";
             this.displayCoursesButton.UseVisualStyleBackColor = true;
+            this.displayCoursesButton.Click += new System.EventHandler(this.displayCoursesButton_Click);
             // 
             // enrollStudentButton
             // 
