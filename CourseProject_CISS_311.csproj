@@ -141,6 +141,12 @@
     <Compile Include="whatCoursesStudentEnrolledForm.Designer.cs">
       <DependentUpon>whatCoursesStudentEnrolledForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="WhoIsInACourseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WhoIsInACourseForm.Designer.cs">
+      <DependentUpon>WhoIsInACourseForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddCourseForm.resx">
       <DependentUpon>AddCourseForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +173,9 @@
     </Compile>
     <EmbeddedResource Include="whatCoursesStudentEnrolledForm.resx">
       <DependentUpon>whatCoursesStudentEnrolledForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WhoIsInACourseForm.resx">
+      <DependentUpon>WhoIsInACourseForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="CourseProjectDBDataSet.xsc">
       <DependentUpon>CourseProjectDBDataSet.xsd</DependentUpon>

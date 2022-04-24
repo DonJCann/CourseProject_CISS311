@@ -115,6 +115,7 @@ namespace CourseProject_CISS_311
             this.whoIsInACourseButton.TabIndex = 6;
             this.whoIsInACourseButton.Text = "Who Is In A Course";
             this.whoIsInACourseButton.UseVisualStyleBackColor = true;
+            this.whoIsInACourseButton.Click += new System.EventHandler(this.whoIsInACourseButton_Click);
             // 
             // whatCoursesIsAStudentInButton
             // 
