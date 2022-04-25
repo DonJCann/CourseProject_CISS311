@@ -66,5 +66,11 @@ namespace CourseProject_CISS_311
                 MessageBox.Show("Course Added.");
             }
         }
+
+        private void closeButton_Click_1(object sender, EventArgs e)
+        {
+            //following lines close form
+            Close();
+        }
     }
 }
