@@ -50,7 +50,7 @@ namespace CourseProject_CISS_311
                 comd.Parameters.AddWithValue("@courseName",
                     courseNameTextBox.Text);
                 comd.Parameters.AddWithValue("@courseSemester",
-                    courseSemesterTextBox.Text);
+                    courseSemesterComboBox.SelectedValue);
 
                 // SQL INSERT statement executed
                 comd.ExecuteScalar();

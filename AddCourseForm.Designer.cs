@@ -37,13 +37,13 @@ namespace CourseProject_CISS_311
             this.label1 = new System.Windows.Forms.Label();
             this.addCourse = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
-            this.courseSemesterTextBox = new System.Windows.Forms.TextBox();
+            this.courseSemesterComboBox = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.courseSemesterTextBox);
+            this.groupBox1.Controls.Add(this.courseSemesterComboBox);
             this.groupBox1.Controls.Add(this.courseIdTextBox);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.courseNameTextBox);
@@ -126,12 +126,18 @@ namespace CourseProject_CISS_311
             this.closeButton.UseVisualStyleBackColor = true;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click_1);
             // 
-            // courseSemesterTextBox
+            // courseSemesterComboBox
             // 
-            this.courseSemesterTextBox.Location = new System.Drawing.Point(254, 151);
-            this.courseSemesterTextBox.Name = "courseSemesterTextBox";
-            this.courseSemesterTextBox.Size = new System.Drawing.Size(100, 26);
-            this.courseSemesterTextBox.TabIndex = 5;
+            this.courseSemesterComboBox.FormattingEnabled = true;
+            this.courseSemesterComboBox.Items.AddRange(new object[] {
+            "Fall",
+            "Spring",
+            "Winter",
+            "Summer"});
+            this.courseSemesterComboBox.Location = new System.Drawing.Point(224, 148);
+            this.courseSemesterComboBox.Name = "courseSemesterComboBox";
+            this.courseSemesterComboBox.Size = new System.Drawing.Size(121, 28);
+            this.courseSemesterComboBox.TabIndex = 5;
             // 
             // AddCourseForm
             // 
@@ -160,6 +166,6 @@ namespace CourseProject_CISS_311
         private System.Windows.Forms.Button closeButton;
         private System.Windows.Forms.TextBox courseIdTextBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox courseSemesterTextBox;
+        private System.Windows.Forms.ComboBox courseSemesterComboBox;
     }
 }
