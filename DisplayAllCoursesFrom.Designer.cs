@@ -33,8 +33,6 @@ namespace CourseProject_CISS_311
             this.allCoursesGridBox = new System.Windows.Forms.GroupBox();
             this.closeButton = new System.Windows.Forms.Button();
             this.allCourseDataGridView = new System.Windows.Forms.DataGridView();
-            this.courseProject_CISS_311DataSet = new CourseProject_CISS_311.CourseProject_CISS_311DataSet();
-            this.courseProjectCISS311DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.courseProjectDBDataSet = new CourseProject_CISS_311.CourseProjectDBDataSet();
             this.courseProjectDBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -44,8 +42,6 @@ namespace CourseProject_CISS_311
             this.courseSemesterDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.allCoursesGridBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.allCourseDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.courseProject_CISS_311DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.courseProjectCISS311DataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.courseProjectDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.courseProjectDBDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -89,16 +85,6 @@ namespace CourseProject_CISS_311
             this.allCourseDataGridView.Size = new System.Drawing.Size(735, 306);
             this.allCourseDataGridView.TabIndex = 1;
             this.allCourseDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // courseProject_CISS_311DataSet
-            // 
-            this.courseProject_CISS_311DataSet.DataSetName = "CourseProject_CISS_311DataSet";
-            this.courseProject_CISS_311DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // courseProjectCISS311DataSetBindingSource
-            // 
-            this.courseProjectCISS311DataSetBindingSource.DataSource = this.courseProject_CISS_311DataSet;
-            this.courseProjectCISS311DataSetBindingSource.Position = 0;
             // 
             // courseProjectDBDataSet
             // 
@@ -152,8 +138,7 @@ namespace CourseProject_CISS_311
             this.Load += new System.EventHandler(this.DisplayAllCoursesFrom_Load);
             this.allCoursesGridBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.allCourseDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.courseProject_CISS_311DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.courseProjectCISS311DataSetBindingSource)).EndInit();
+
             ((System.ComponentModel.ISupportInitialize)(this.courseProjectDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.courseProjectDBDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
@@ -166,8 +151,7 @@ namespace CourseProject_CISS_311
         private System.Windows.Forms.GroupBox allCoursesGridBox;
         private System.Windows.Forms.Button closeButton;
         private System.Windows.Forms.DataGridView allCourseDataGridView;
-        private System.Windows.Forms.BindingSource courseProjectCISS311DataSetBindingSource;
-        private CourseProject_CISS_311DataSet courseProject_CISS_311DataSet;
+
         private System.Windows.Forms.BindingSource courseProjectDBDataSetBindingSource;
         private CourseProjectDBDataSet courseProjectDBDataSet;
         private System.Windows.Forms.BindingSource bindingSource1;

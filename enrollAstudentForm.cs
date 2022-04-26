@@ -68,5 +68,10 @@ namespace CourseProject_CISS_311
 
             }
         }
+
+        private void enrollButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

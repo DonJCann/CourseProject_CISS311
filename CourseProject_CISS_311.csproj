@@ -85,11 +85,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CourseProjectDBDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="CourseProject_CISS_311DataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CourseProject_CISS_311DataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="DisplayAllCoursesFrom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +131,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DisplayAllCoursesFrom.resx">
       <DependentUpon>DisplayAllCoursesFrom.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="DisplayStudentForm.resx">
       <DependentUpon>DisplayStudentForm.cs</DependentUpon>
@@ -171,17 +167,6 @@
     </None>
     <None Include="CourseProjectDBDataSet.xss">
       <DependentUpon>CourseProjectDBDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="CourseProject_CISS_311DataSet.xsc">
-      <DependentUpon>CourseProject_CISS_311DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="CourseProject_CISS_311DataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CourseProject_CISS_311DataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="CourseProject_CISS_311DataSet.xss">
-      <DependentUpon>CourseProject_CISS_311DataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

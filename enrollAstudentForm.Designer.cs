@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.selectAStudentComboBox = new System.Windows.Forms.ComboBox();
-            this.selectACourseComboBox = new System.Windows.Forms.ComboBox();
-            this.enrollButton = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
+            this.enrollButton = new System.Windows.Forms.Button();
+            this.selectACourseComboBox = new System.Windows.Forms.ComboBox();
+            this.selectAStudentComboBox = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,15 +54,44 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Enrollment Data";
             // 
-            // label1
+            // closeButton
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(52, 59);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Select A Student:";
+            this.closeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeButton.Location = new System.Drawing.Point(381, 262);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(100, 39);
+            this.closeButton.TabIndex = 5;
+            this.closeButton.Text = "Close";
+            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            // 
+            // enrollButton
+            // 
+            this.enrollButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enrollButton.Location = new System.Drawing.Point(56, 262);
+            this.enrollButton.Name = "enrollButton";
+            this.enrollButton.Size = new System.Drawing.Size(102, 39);
+            this.enrollButton.TabIndex = 4;
+            this.enrollButton.Text = "&Enroll";
+            this.enrollButton.UseVisualStyleBackColor = true;
+            this.enrollButton.Click += new System.EventHandler(this.enrollButton_Click);
+            // 
+            // selectACourseComboBox
+            // 
+            this.selectACourseComboBox.FormattingEnabled = true;
+            this.selectACourseComboBox.Location = new System.Drawing.Point(211, 168);
+            this.selectACourseComboBox.Name = "selectACourseComboBox";
+            this.selectACourseComboBox.Size = new System.Drawing.Size(270, 33);
+            this.selectACourseComboBox.TabIndex = 3;
+            // 
+            // selectAStudentComboBox
+            // 
+            this.selectAStudentComboBox.FormattingEnabled = true;
+            this.selectAStudentComboBox.Location = new System.Drawing.Point(211, 59);
+            this.selectAStudentComboBox.Name = "selectAStudentComboBox";
+            this.selectAStudentComboBox.Size = new System.Drawing.Size(270, 33);
+            this.selectAStudentComboBox.TabIndex = 2;
+            this.selectAStudentComboBox.SelectedIndexChanged += new System.EventHandler(this.selectAStudentComboBox_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -74,43 +103,15 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Select A course:";
             // 
-            // selectAStudentComboBox
+            // label1
             // 
-            this.selectAStudentComboBox.FormattingEnabled = true;
-            this.selectAStudentComboBox.Location = new System.Drawing.Point(211, 59);
-            this.selectAStudentComboBox.Name = "selectAStudentComboBox";
-            this.selectAStudentComboBox.Size = new System.Drawing.Size(270, 33);
-            this.selectAStudentComboBox.TabIndex = 2;
-            this.selectAStudentComboBox.SelectedIndexChanged += new System.EventHandler(this.selectAStudentComboBox_SelectedIndexChanged);
-            // 
-            // selectACourseComboBox
-            // 
-            this.selectACourseComboBox.FormattingEnabled = true;
-            this.selectACourseComboBox.Location = new System.Drawing.Point(211, 168);
-            this.selectACourseComboBox.Name = "selectACourseComboBox";
-            this.selectACourseComboBox.Size = new System.Drawing.Size(270, 33);
-            this.selectACourseComboBox.TabIndex = 3;
-            // 
-            // enrollButton
-            // 
-            this.enrollButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.enrollButton.Location = new System.Drawing.Point(56, 262);
-            this.enrollButton.Name = "enrollButton";
-            this.enrollButton.Size = new System.Drawing.Size(102, 39);
-            this.enrollButton.TabIndex = 4;
-            this.enrollButton.Text = "&Enroll";
-            this.enrollButton.UseVisualStyleBackColor = true;
-            // 
-            // closeButton
-            // 
-            this.closeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closeButton.Location = new System.Drawing.Point(381, 262);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(100, 39);
-            this.closeButton.TabIndex = 5;
-            this.closeButton.Text = "Close";
-            this.closeButton.UseVisualStyleBackColor = true;
-            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(52, 59);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Select A Student:";
             // 
             // EnrollAStudentForm
             // 
