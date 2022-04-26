@@ -34,14 +34,7 @@ namespace CourseProject_CISS_311
         }
 
 
-
-        private void closeButton_Click(object sender, EventArgs e)
-        {
-            //Closes the form
-            Close();
-        }
-
-        private void addCourse_Click_1(object sender, EventArgs e)
+        private void addCourse_Click(object sender, EventArgs e)
         {
             using (conn = new SqlConnection(connectionString))
             using (SqlCommand comd = new SqlCommand
@@ -57,7 +50,7 @@ namespace CourseProject_CISS_311
                 comd.Parameters.AddWithValue("@courseName",
                     courseNameTextBox.Text);
                 comd.Parameters.AddWithValue("@courseSemester",
-                    courseSemesterComboBox.SelectedValue);
+                    courseSemesterTextBox.Text);
 
                 // SQL INSERT statement executed
                 comd.ExecuteScalar();
@@ -67,6 +60,7 @@ namespace CourseProject_CISS_311
             }
         }
 
+
         private void closeButton_Click_1(object sender, EventArgs e)
         {
             //following lines close form
@@ -74,3 +68,4 @@ namespace CourseProject_CISS_311
         }
     }
 }
+   
