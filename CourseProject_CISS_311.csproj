@@ -85,31 +85,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CourseProjectDBDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="CourseProjectDBDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CourseProjectDBDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="CourseProjectDBDataSet2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CourseProjectDBDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="CourseProjectDBDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CourseProjectDBDataSet3.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="CourseProjectDBDataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CourseProjectDBDataSet4.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="CourseProjectDBDataSet5.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CourseProjectDBDataSet5.xsd</DependentUpon>
-    </Compile>
     <Compile Include="CourseProject_CISS_311DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -196,61 +171,6 @@
     </None>
     <None Include="CourseProjectDBDataSet.xss">
       <DependentUpon>CourseProjectDBDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="CourseProjectDBDataSet1.xsc">
-      <DependentUpon>CourseProjectDBDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="CourseProjectDBDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CourseProjectDBDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="CourseProjectDBDataSet1.xss">
-      <DependentUpon>CourseProjectDBDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="CourseProjectDBDataSet2.xsc">
-      <DependentUpon>CourseProjectDBDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="CourseProjectDBDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CourseProjectDBDataSet2.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="CourseProjectDBDataSet2.xss">
-      <DependentUpon>CourseProjectDBDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="CourseProjectDBDataSet3.xsc">
-      <DependentUpon>CourseProjectDBDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="CourseProjectDBDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CourseProjectDBDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="CourseProjectDBDataSet3.xss">
-      <DependentUpon>CourseProjectDBDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="CourseProjectDBDataSet4.xsc">
-      <DependentUpon>CourseProjectDBDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="CourseProjectDBDataSet4.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CourseProjectDBDataSet4.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="CourseProjectDBDataSet4.xss">
-      <DependentUpon>CourseProjectDBDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="CourseProjectDBDataSet5.xsc">
-      <DependentUpon>CourseProjectDBDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="CourseProjectDBDataSet5.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CourseProjectDBDataSet5.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="CourseProjectDBDataSet5.xss">
-      <DependentUpon>CourseProjectDBDataSet5.xsd</DependentUpon>
     </None>
     <None Include="CourseProject_CISS_311DataSet.xsc">
       <DependentUpon>CourseProject_CISS_311DataSet.xsd</DependentUpon>
