@@ -40,14 +40,32 @@ namespace CourseProject_CISS_311
 
             using (conn = new SqlConnection(connectionString))//setsup connection
             using (SqlDataAdapter adapter = new SqlDataAdapter
-                ("SELECT * FROM student", conn))//passes conn to SqlDataAdapter
+                ("SELECT student.studentName FROM student", conn))//passes conn to SqlDataAdapter
 
             {
-                DataTable studentTable = new DataTable();//creates advisorTable
+                DataTable studentTable = new DataTable();//creates studentTable
                 adapter.Fill(studentTable);//fills table with data
-                selectAStudentComboBox.DisplayMember = "studentName";//adds instructorName to DisplayMember
-                selectAStudentComboBox.ValueMember = "studentId";//adds instructorId to Value member
+
+                selectAStudentComboBox.DisplayMember = "studentName";//adds studentName to DisplayMember
+                selectAStudentComboBox.ValueMember = "studentId";//adds studentId to Value member
                 selectAStudentComboBox.DataSource = studentTable;//sets table to Datasource
+
+
+            }
+
+            using (conn = new SqlConnection(connectionString))//setsup connection
+            using (SqlDataAdapter adapter = new SqlDataAdapter
+                ("SELECT courses.courseName FROM courses", conn))//passes conn to SqlDataAdapter
+
+            {
+                DataTable courseTable = new DataTable();//creates courseTable
+                adapter.Fill(courseTable);//fills table with data
+
+                selectACourseComboBox.DisplayMember = "courseName";//adds courseName to DisplayMember
+                selectACourseComboBox.ValueMember = "courseId";//adds courseId to Value member
+                selectACourseComboBox.DataSource = courseTable;//sets table to Datasource
+
+
             }
         }
     }
