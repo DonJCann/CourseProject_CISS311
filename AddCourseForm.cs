@@ -53,7 +53,7 @@ namespace CourseProject_CISS_311
                     courseSemesterComboBox.SelectedValue);
 
                 // SQL INSERT statement executed
-                comd.ExecuteScalar();
+                
 
                 //Displays that the course has been added
                 MessageBox.Show("Course Added.");
