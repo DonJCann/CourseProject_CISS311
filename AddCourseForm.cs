@@ -50,11 +50,8 @@ namespace CourseProject_CISS_311
                 comd.Parameters.AddWithValue("@courseName",
                     courseNameTextBox.Text);
                 comd.Parameters.AddWithValue("@courseSemester",
-                    courseSemesterComboBox.SelectedValue);
-
-                // SQL INSERT statement executed
-                
-
+                    semesterComboBox.SelectedValue);
+                comd.ExecuteScalar();//performs insert
                 //Displays that the course has been added
                 MessageBox.Show("Course Added.");
             }
@@ -65,6 +62,36 @@ namespace CourseProject_CISS_311
         {
             //following lines close form
             Close();
+        }
+
+        private void courseSemesterComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddCourseForm_Load(object sender, EventArgs e)
+        {
+            /*
+            using (conn = new SqlConnection(connectionString))
+            using (SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM courses", conn))
+            {
+                DataTable coursesTable = new DataTable();
+                adapter.Fill(coursesTable);
+                semesterComboBox.DisplayMember = "courseSemester";
+                semesterComboBox.ValueMember = "courseId";
+                semesterComboBox.DataSource = coursesTable;
+            }*/
+            Dictionary<string, string> dict = new Dictionary<string, string>()
+            {
+                 {"Fall ","Fall" },
+                 {"Winter  ","Winter" },
+                 {"Spring  ","Spring " },
+                {"Summer  ","Summer " }
+            };
+
+                  semesterComboBox.DataSource = new BindingSource(dict, null);
+                  semesterComboBox.DisplayMember = "Key";
+                  semesterComboBox.ValueMember = "Value";
         }
     }
 }

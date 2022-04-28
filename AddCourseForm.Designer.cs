@@ -37,78 +37,78 @@ namespace CourseProject_CISS_311
             this.label1 = new System.Windows.Forms.Label();
             this.addCourse = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
-            this.courseSemesterComboBox = new System.Windows.Forms.ComboBox();
+            this.semesterComboBox = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.courseSemesterComboBox);
+            this.groupBox1.Controls.Add(this.semesterComboBox);
             this.groupBox1.Controls.Add(this.courseIdTextBox);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.courseNameTextBox);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(160, 57);
+            this.groupBox1.Location = new System.Drawing.Point(180, 71);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(396, 219);
+            this.groupBox1.Size = new System.Drawing.Size(446, 274);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Enter Course Data";
             // 
             // courseIdTextBox
             // 
-            this.courseIdTextBox.Location = new System.Drawing.Point(245, 48);
+            this.courseIdTextBox.Location = new System.Drawing.Point(267, 60);
             this.courseIdTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.courseIdTextBox.Name = "courseIdTextBox";
-            this.courseIdTextBox.Size = new System.Drawing.Size(100, 26);
+            this.courseIdTextBox.Size = new System.Drawing.Size(121, 30);
             this.courseIdTextBox.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(64, 50);
+            this.label3.Location = new System.Drawing.Point(72, 62);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 20);
+            this.label3.Size = new System.Drawing.Size(103, 25);
             this.label3.TabIndex = 3;
             this.label3.Text = "Course Id:";
             // 
             // courseNameTextBox
             // 
-            this.courseNameTextBox.Location = new System.Drawing.Point(245, 96);
+            this.courseNameTextBox.Location = new System.Drawing.Point(267, 120);
             this.courseNameTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.courseNameTextBox.Name = "courseNameTextBox";
-            this.courseNameTextBox.Size = new System.Drawing.Size(100, 26);
+            this.courseNameTextBox.Size = new System.Drawing.Size(121, 30);
             this.courseNameTextBox.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(37, 151);
+            this.label2.Location = new System.Drawing.Point(42, 189);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 20);
+            this.label2.Size = new System.Drawing.Size(171, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Course Semester:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(53, 96);
+            this.label1.Location = new System.Drawing.Point(60, 120);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 20);
+            this.label1.Size = new System.Drawing.Size(139, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Course Name:";
             // 
             // addCourse
             // 
             this.addCourse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addCourse.Location = new System.Drawing.Point(187, 318);
+            this.addCourse.Location = new System.Drawing.Point(210, 398);
             this.addCourse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addCourse.Name = "addCourse";
-            this.addCourse.Size = new System.Drawing.Size(168, 31);
+            this.addCourse.Size = new System.Drawing.Size(189, 39);
             this.addCourse.TabIndex = 4;
             this.addCourse.Text = "&Add Course";
             this.addCourse.UseVisualStyleBackColor = true;
@@ -117,39 +117,35 @@ namespace CourseProject_CISS_311
             // closeButton
             // 
             this.closeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closeButton.Location = new System.Drawing.Point(405, 318);
+            this.closeButton.Location = new System.Drawing.Point(456, 398);
             this.closeButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(121, 31);
+            this.closeButton.Size = new System.Drawing.Size(136, 39);
             this.closeButton.TabIndex = 5;
             this.closeButton.Text = "Cl&ose";
             this.closeButton.UseVisualStyleBackColor = true;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click_1);
             // 
-            // courseSemesterComboBox
+            // semesterComboBox
             // 
-            this.courseSemesterComboBox.FormattingEnabled = true;
-            this.courseSemesterComboBox.Items.AddRange(new object[] {
-            "Fall",
-            "Spring",
-            "Winter",
-            "Summer"});
-            this.courseSemesterComboBox.Location = new System.Drawing.Point(224, 148);
-            this.courseSemesterComboBox.Name = "courseSemesterComboBox";
-            this.courseSemesterComboBox.Size = new System.Drawing.Size(121, 28);
-            this.courseSemesterComboBox.TabIndex = 5;
+            this.semesterComboBox.FormattingEnabled = true;
+            this.semesterComboBox.Location = new System.Drawing.Point(267, 181);
+            this.semesterComboBox.Name = "semesterComboBox";
+            this.semesterComboBox.Size = new System.Drawing.Size(121, 33);
+            this.semesterComboBox.TabIndex = 6;
             // 
             // AddCourseForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(900, 562);
             this.Controls.Add(this.addCourse);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddCourseForm";
             this.Text = "AddCourseForm";
+            this.Load += new System.EventHandler(this.AddCourseForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -166,6 +162,6 @@ namespace CourseProject_CISS_311
         private System.Windows.Forms.Button closeButton;
         private System.Windows.Forms.TextBox courseIdTextBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox courseSemesterComboBox;
+        private System.Windows.Forms.ComboBox semesterComboBox;
     }
 }
