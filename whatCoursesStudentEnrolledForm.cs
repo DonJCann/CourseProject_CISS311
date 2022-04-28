@@ -51,7 +51,7 @@ namespace CourseProject_CISS_311
         private void studentComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             using (conn = new SqlConnection(connectionString))
-            using (SqlCommand comd = new SqlCommand ("SELECT coursesEnrolled FROM student ", conn ))
+            using (SqlCommand comd = new SqlCommand ("SELECT coursesEnrolled FROM student " + "WHERE student.studentId = @studentId", conn ))
             using (SqlDataAdapter adapter = new SqlDataAdapter(comd))
             {
                 comd.Parameters.AddWithValue("@studentId", studentComboBox.SelectedValue.ToString());

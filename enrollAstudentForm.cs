@@ -71,7 +71,15 @@ namespace CourseProject_CISS_311
 
         private void enrollButton_Click(object sender, EventArgs e)
         {
-
+            using (conn = new SqlConnection(connectionString))
+            using (SqlCommand comd = new SqlCommand ("UPDATE student SET student.coursesEnrolled = courses.courseName " + "WHERE student.studentName = @studentName ", conn))
+            {
+                conn.Open();
+                comd.Parameters.AddWithValue("@courseName", selectACourseComboBox.SelectedValue);
+                comd.Parameters.AddWithValue("@studentName", selectAStudentComboBox);
+                comd.ExecuteScalar();
+                MessageBox.Show("Student Enrolled!");
+            }
         }
     }
 }
