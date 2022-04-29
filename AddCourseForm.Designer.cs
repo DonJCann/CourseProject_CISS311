@@ -30,6 +30,7 @@ namespace CourseProject_CISS_311
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.semesterComboBox = new System.Windows.Forms.ComboBox();
             this.courseIdTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.courseNameTextBox = new System.Windows.Forms.TextBox();
@@ -37,7 +38,6 @@ namespace CourseProject_CISS_311
             this.label1 = new System.Windows.Forms.Label();
             this.addCourse = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
-            this.semesterComboBox = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,13 +59,21 @@ namespace CourseProject_CISS_311
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Enter Course Data";
             // 
+            // semesterComboBox
+            // 
+            this.semesterComboBox.FormattingEnabled = true;
+            this.semesterComboBox.Location = new System.Drawing.Point(267, 181);
+            this.semesterComboBox.Name = "semesterComboBox";
+            this.semesterComboBox.Size = new System.Drawing.Size(121, 33);
+            this.semesterComboBox.TabIndex = 3;
+            // 
             // courseIdTextBox
             // 
             this.courseIdTextBox.Location = new System.Drawing.Point(267, 60);
             this.courseIdTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.courseIdTextBox.Name = "courseIdTextBox";
             this.courseIdTextBox.Size = new System.Drawing.Size(121, 30);
-            this.courseIdTextBox.TabIndex = 4;
+            this.courseIdTextBox.TabIndex = 1;
             // 
             // label3
             // 
@@ -125,14 +133,6 @@ namespace CourseProject_CISS_311
             this.closeButton.Text = "Cl&ose";
             this.closeButton.UseVisualStyleBackColor = true;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click_1);
-            // 
-            // semesterComboBox
-            // 
-            this.semesterComboBox.FormattingEnabled = true;
-            this.semesterComboBox.Location = new System.Drawing.Point(267, 181);
-            this.semesterComboBox.Name = "semesterComboBox";
-            this.semesterComboBox.Size = new System.Drawing.Size(121, 33);
-            this.semesterComboBox.TabIndex = 6;
             // 
             // AddCourseForm
             // 
