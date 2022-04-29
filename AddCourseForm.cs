@@ -46,11 +46,11 @@ namespace CourseProject_CISS_311
                 // Connection opened because SqlDataAdapter is not used this time
                 conn.Open();
                 comd.Parameters.AddWithValue("@courseId",
-                    courseIdTextBox.Text);
+                    courseIdTextBox.Text);//sets @courseId to textbox
                 comd.Parameters.AddWithValue("@courseName",
-                    courseNameTextBox.Text);
+                    courseNameTextBox.Text);//sets @courseName to textbox
                 comd.Parameters.AddWithValue("@courseSemester",
-                    semesterComboBox.SelectedValue);
+                    semesterComboBox.SelectedValue);//sets @courseSemester to combobox
                 comd.ExecuteScalar();//performs insert
                 //Displays that the course has been added
                 MessageBox.Show("Course Added.");
@@ -71,19 +71,10 @@ namespace CourseProject_CISS_311
 
         private void AddCourseForm_Load(object sender, EventArgs e)
         {
-            /*
-            using (conn = new SqlConnection(connectionString))
-            using (SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM courses", conn))
+
+            Dictionary<string, string> dict = new Dictionary<string, string>()//creates dictionary string
             {
-                DataTable coursesTable = new DataTable();
-                adapter.Fill(coursesTable);
-                semesterComboBox.DisplayMember = "courseSemester";
-                semesterComboBox.ValueMember = "courseId";
-                semesterComboBox.DataSource = coursesTable;
-            }*/
-            Dictionary<string, string> dict = new Dictionary<string, string>()
-            {
-                 {"Fall ","Fall" },
+                 {"Fall ","Fall" }, //Tkey,Tvalue
                  {"Winter  ","Winter" },
                  {"Spring  ","Spring " },
                 {"Summer  ","Summer " }
