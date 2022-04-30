@@ -50,11 +50,11 @@ namespace CourseProject_CISS_311
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(160, 57);
+            this.groupBox1.Location = new System.Drawing.Point(78, 58);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(396, 219);
+            this.groupBox1.Size = new System.Drawing.Size(628, 238);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Enter Course Data";
@@ -63,25 +63,25 @@ namespace CourseProject_CISS_311
             // 
             this.semesterComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.semesterComboBox.FormattingEnabled = true;
-            this.semesterComboBox.Location = new System.Drawing.Point(258, 151);
+            this.semesterComboBox.Location = new System.Drawing.Point(365, 143);
             this.semesterComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.semesterComboBox.Name = "semesterComboBox";
-            this.semesterComboBox.Size = new System.Drawing.Size(108, 37);
+            this.semesterComboBox.Size = new System.Drawing.Size(148, 37);
             this.semesterComboBox.TabIndex = 3;
             // 
             // courseIdTextBox
             // 
-            this.courseIdTextBox.Location = new System.Drawing.Point(258, 50);
+            this.courseIdTextBox.Location = new System.Drawing.Point(365, 50);
             this.courseIdTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.courseIdTextBox.Name = "courseIdTextBox";
-            this.courseIdTextBox.Size = new System.Drawing.Size(108, 22);
+            this.courseIdTextBox.Size = new System.Drawing.Size(148, 22);
             this.courseIdTextBox.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(64, 50);
+            this.label3.Location = new System.Drawing.Point(112, 50);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(133, 29);
             this.label3.TabIndex = 3;
@@ -89,17 +89,17 @@ namespace CourseProject_CISS_311
             // 
             // courseNameTextBox
             // 
-            this.courseNameTextBox.Location = new System.Drawing.Point(258, 96);
+            this.courseNameTextBox.Location = new System.Drawing.Point(365, 96);
             this.courseNameTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.courseNameTextBox.Name = "courseNameTextBox";
-            this.courseNameTextBox.Size = new System.Drawing.Size(108, 22);
+            this.courseNameTextBox.Size = new System.Drawing.Size(148, 22);
             this.courseNameTextBox.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(22, 151);
+            this.label2.Location = new System.Drawing.Point(56, 151);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(223, 29);
             this.label2.TabIndex = 1;
@@ -109,7 +109,7 @@ namespace CourseProject_CISS_311
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(46, 96);
+            this.label1.Location = new System.Drawing.Point(83, 96);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(180, 29);
             this.label1.TabIndex = 0;
