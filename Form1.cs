@@ -82,5 +82,10 @@ namespace CourseProject_CISS_311
             EnrollAStudentForm EnrollAStudentForm = new EnrollAStudentForm();
             EnrollAStudentForm.ShowDialog();
         }
+
+        private void welcomeForm_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
