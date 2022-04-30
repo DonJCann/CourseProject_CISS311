@@ -49,74 +49,79 @@ namespace CourseProject_CISS_311
             this.groupBox1.Controls.Add(this.courseNameTextBox);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(180, 71);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(160, 57);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(446, 274);
+            this.groupBox1.Size = new System.Drawing.Size(396, 219);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Enter Course Data";
             // 
             // semesterComboBox
             // 
+            this.semesterComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.semesterComboBox.FormattingEnabled = true;
-            this.semesterComboBox.Location = new System.Drawing.Point(267, 181);
+            this.semesterComboBox.Location = new System.Drawing.Point(258, 151);
+            this.semesterComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.semesterComboBox.Name = "semesterComboBox";
-            this.semesterComboBox.Size = new System.Drawing.Size(121, 33);
+            this.semesterComboBox.Size = new System.Drawing.Size(108, 37);
             this.semesterComboBox.TabIndex = 3;
             // 
             // courseIdTextBox
             // 
-            this.courseIdTextBox.Location = new System.Drawing.Point(267, 60);
+            this.courseIdTextBox.Location = new System.Drawing.Point(258, 50);
             this.courseIdTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.courseIdTextBox.Name = "courseIdTextBox";
-            this.courseIdTextBox.Size = new System.Drawing.Size(121, 30);
+            this.courseIdTextBox.Size = new System.Drawing.Size(108, 22);
             this.courseIdTextBox.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(72, 62);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(64, 50);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 25);
+            this.label3.Size = new System.Drawing.Size(133, 29);
             this.label3.TabIndex = 3;
             this.label3.Text = "Course Id:";
             // 
             // courseNameTextBox
             // 
-            this.courseNameTextBox.Location = new System.Drawing.Point(267, 120);
+            this.courseNameTextBox.Location = new System.Drawing.Point(258, 96);
             this.courseNameTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.courseNameTextBox.Name = "courseNameTextBox";
-            this.courseNameTextBox.Size = new System.Drawing.Size(121, 30);
+            this.courseNameTextBox.Size = new System.Drawing.Size(108, 22);
             this.courseNameTextBox.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(42, 189);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(22, 151);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(171, 25);
+            this.label2.Size = new System.Drawing.Size(223, 29);
             this.label2.TabIndex = 1;
             this.label2.Text = "Course Semester:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(60, 120);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(46, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 25);
+            this.label1.Size = new System.Drawing.Size(180, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Course Name:";
             // 
             // addCourse
             // 
-            this.addCourse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addCourse.Location = new System.Drawing.Point(210, 398);
+            this.addCourse.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addCourse.Location = new System.Drawing.Point(187, 318);
             this.addCourse.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addCourse.Name = "addCourse";
-            this.addCourse.Size = new System.Drawing.Size(189, 39);
+            this.addCourse.Size = new System.Drawing.Size(170, 46);
             this.addCourse.TabIndex = 4;
             this.addCourse.Text = "&Add Course";
             this.addCourse.UseVisualStyleBackColor = true;
@@ -124,11 +129,11 @@ namespace CourseProject_CISS_311
             // 
             // closeButton
             // 
-            this.closeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closeButton.Location = new System.Drawing.Point(456, 398);
+            this.closeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeButton.Location = new System.Drawing.Point(418, 319);
             this.closeButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(136, 39);
+            this.closeButton.Size = new System.Drawing.Size(124, 45);
             this.closeButton.TabIndex = 5;
             this.closeButton.Text = "Cl&ose";
             this.closeButton.UseVisualStyleBackColor = true;
@@ -136,9 +141,9 @@ namespace CourseProject_CISS_311
             // 
             // AddCourseForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 562);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.addCourse);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.groupBox1);
