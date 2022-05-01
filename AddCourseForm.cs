@@ -36,24 +36,38 @@ namespace CourseProject_CISS_311
 
         private void addCourse_Click(object sender, EventArgs e)
         {
-            using (conn = new SqlConnection(connectionString))
-            using (SqlCommand comd = new SqlCommand
-
-            // SQL INSERT statement issued 
-            ("INSERT INTO courses (courseId, courseName, courseSemester)" +
-            "VALUES (@courseId, @courseName, @courseSemester)", conn))
+            if (courseIdTextBox.Text == "") // if/else for empty textbox detection
             {
-                // Connection opened because SqlDataAdapter is not used this time
-                conn.Open();
-                comd.Parameters.AddWithValue("@courseId",
-                    courseIdTextBox.Text);//sets @courseId to textbox
-                comd.Parameters.AddWithValue("@courseName",
-                    courseNameTextBox.Text);//sets @courseName to textbox
-                comd.Parameters.AddWithValue("@courseSemester",
-                    semesterComboBox.SelectedValue);//sets @courseSemester to combobox
-                comd.ExecuteScalar();//performs insert
-                //Displays that the course has been added
-                MessageBox.Show("Course Added.");
+                string myStringVariable1 = string.Empty;
+                MessageBox.Show("Course ID is required");
+            }
+            else if (courseNameTextBox.Text == "")
+            {
+                string myStringVariable2 = string.Empty;
+                MessageBox.Show("Course Name is required");
+            }
+            else
+            {
+
+                using (conn = new SqlConnection(connectionString))
+                using (SqlCommand comd = new SqlCommand
+
+                // SQL INSERT statement issued 
+                ("INSERT INTO courses (courseId, courseName, courseSemester)" +
+                "VALUES (@courseId, @courseName, @courseSemester)", conn))
+                {
+                    // Connection opened because SqlDataAdapter is not used this time
+                    conn.Open();
+                    comd.Parameters.AddWithValue("@courseId",
+                        courseIdTextBox.Text);//sets @courseId to textbox
+                    comd.Parameters.AddWithValue("@courseName",
+                        courseNameTextBox.Text);//sets @courseName to textbox
+                    comd.Parameters.AddWithValue("@courseSemester",
+                        semesterComboBox.SelectedValue);//sets @courseSemester to combobox
+                    comd.ExecuteScalar();//performs insert
+                                         //Displays that the course has been added
+                    MessageBox.Show("Course Added.");
+                }
             }
         }
 

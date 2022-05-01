@@ -41,21 +41,35 @@ namespace CourseProject_CISS_311
 
         private void addStudentButton_Click(object sender, EventArgs e)
         {
-            //following lines establish a connection to the database to insert values from the add student form
+            if (studentNameTextBox.Text == "") // if/else for empty textbox detection
+            {
+                string myStringVariable1 = string.Empty;
+                MessageBox.Show("Student Name is required");
+            }
+            else if (studentIdTextBox.Text == "")
+            {
+                string myStringVariable2 = string.Empty;
+                MessageBox.Show("Student ID is required");
+            }
+
+            else
+            {
+                //following lines establish a connection to the database to insert values from the add student form
                 using (conn = new SqlConnection(connectionString))
-                using(SqlCommand comd = new SqlCommand 
+                using (SqlCommand comd = new SqlCommand
                 ("INSERT INTO student (studentName, studentId) " +
                 "VALUES (@studentName, @studentId)", conn))
-            {
-                conn.Open();//opens connection
-                comd.Parameters.AddWithValue("@studentName", 
-                    studentNameTextBox.Text);//assigns value of textbox to @studentName
-                comd.Parameters.AddWithValue("@studentId", 
-                    studentIdTextBox.Text);//assigns value of textbox to @studentId
-                //following lines confirm a student has been successfully added to database by displaying messages in a message box and on the status strip
-                comd.ExecuteScalar();//performs insert
-                MessageBox.Show("Student Added.");
-                feedbackToolStripStatusLabel.Text = "The student has been added to the database!";
+                {
+                    conn.Open();//opens connection
+                    comd.Parameters.AddWithValue("@studentName",
+                        studentNameTextBox.Text);//assigns value of textbox to @studentName
+                    comd.Parameters.AddWithValue("@studentId",
+                        studentIdTextBox.Text);//assigns value of textbox to @studentId
+                                               //following lines confirm a student has been successfully added to database by displaying messages in a message box and on the status strip
+                    comd.ExecuteScalar();//performs insert
+                    MessageBox.Show("Student Added.");
+                    feedbackToolStripStatusLabel.Text = "The student has been added to the database!";
+                }
             }
         }
     }
